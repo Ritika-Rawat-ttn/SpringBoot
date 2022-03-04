@@ -6,10 +6,11 @@ import org.springframework.stereotype.Component;
 @Component
 public class Car {
 
-    private Honk honk;
 
     @Autowired
-    public Car(Honk honk) {
+    private Honk honk;
+
+    public Car(Honk honk) {               //Constructor injection
         this.honk = honk;
     }
 
